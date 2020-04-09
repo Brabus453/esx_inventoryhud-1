@@ -1,4 +1,3 @@
-=============================================================
 
 ## Disable default esx inventory:
 
@@ -18,11 +17,8 @@ Citizen.CreateThread(function()
 end)
 ```
 
-=============================================================
 
 ## Add support for `esx_properties`:
-## edited esx_property:
-https://github.com/Nertigel/esx_property
 
 Open `esx_property/client/main.lua` and do the following:
 Find this code in OpenRoomMenu function:
@@ -60,7 +56,6 @@ function OpenPropertyInventoryMenu(property, owner)
 end
 ```
       
-=============================================================
 
 ## Add suport for `esx_policejob` etc...
 
@@ -74,7 +69,6 @@ function OpenBodySearchMenu(player)
 end
 ```
 
-=============================================================
 
 ## Add support for `esx_aiomenu`:
 
@@ -126,11 +120,9 @@ RegisterNUICallback('NUIopenInventory', function()
 end)
 ```
 
-=============================================================
 
 ## Fix for `esx_addoninventory`:
 
 Go to `esx_addoninventory\server\classes\addoninventory.lua` line 39
 Replace `label = Items[name]` to `label = items[name]`
 
-=============================================================
